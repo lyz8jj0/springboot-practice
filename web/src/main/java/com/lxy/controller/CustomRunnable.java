@@ -9,11 +9,11 @@ public class CustomRunnable implements Runnable {
 
         for (int i = 0; i < 500; i++) {
             if (this.ticket > 0) {
-//                try {
-//                    Thread.sleep(500);// 睡眠0.5秒  不至于运行太快
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
+                try {
+                    Thread.sleep(1000);// 睡眠0.5秒  不至于运行太快
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 System.out.println(Thread.currentThread().getName() + "卖票--->" + (this.ticket--));
             }
         }
