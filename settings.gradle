@@ -1,3 +1,5 @@
 rootProject.name = 'springboot-practice'
 
-include 'controller'
+include 'web'
+include 'entity'
+

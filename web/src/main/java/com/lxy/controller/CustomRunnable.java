@@ -1,8 +1,11 @@
 package com.lxy.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class CustomRunnable implements Runnable {
 
-    private int ticket = 10;
+    private int ticket = 9;
 
     @Override
     public void run() {
@@ -10,7 +13,7 @@ public class CustomRunnable implements Runnable {
         for (int i = 0; i < 500; i++) {
             if (this.ticket > 0) {
                 try {
-                    Thread.sleep(1000);// 睡眠0.5秒  不至于运行太快
+                    Thread.sleep(1000);// 睡眠1秒  不至于运行太快
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -30,5 +33,7 @@ public class CustomRunnable implements Runnable {
         t1.start();
         t2.start();
         t3.start();
+
+        Map<String,Object> map = new HashMap<>();
     }
 }

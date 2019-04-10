@@ -1,8 +1,8 @@
 package com.lxy.controller;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Calendar;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 
 public class TestController implements Runnable {
 
@@ -19,8 +19,8 @@ public class TestController implements Runnable {
     }
 
     public static void main(String[] args) {
-        TestController mt = new TestController();
-
+        HashSet<Object> objects = new HashSet<>();
+        Map<String,Object> map= new HashMap<>();
     }
 }
 
