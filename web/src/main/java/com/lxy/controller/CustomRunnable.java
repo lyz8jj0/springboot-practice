@@ -13,7 +13,7 @@ public class CustomRunnable implements Runnable {
         for (int i = 0; i < 500; i++) {
             if (this.ticket > 0) {
                 try {
-                    Thread.sleep(1000);// 睡眠1秒  不至于运行太快
+                    Thread.sleep(500);// 睡眠1秒  不至于运行太快
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
